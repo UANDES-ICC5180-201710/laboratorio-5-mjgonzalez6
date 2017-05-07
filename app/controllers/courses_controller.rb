@@ -1,10 +1,16 @@
 class CoursesController < ApplicationController
-  before_action :set_course, only: [:show, :edit, :update, :destroy]
+  before_action :set_course, only: [:show, :edit, :update, :destroy, :students]
 
   # GET /courses
   # GET /courses.json
   def index
     @courses = Course.all
+  end
+
+  def students
+  end
+
+  def assignments
   end
 
   # GET /courses/1
